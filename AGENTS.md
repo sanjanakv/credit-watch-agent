@@ -15,3 +15,9 @@ The contract is `docs/specs/SPEC-001-signal-scout.md`. The tests in `tests/` are
 - Open a PR. Never push to main. Never merge. A human approves the merge.
 - PR description must include: what changed, how you verified it (commands + results),
   PURE self-review (see skill `pure-self-review`), and anything you were unsure about.
+
+## Cursor Cloud specific instructions
+
+- Setup is `.cursor/environment.json` only. Python 3.12 is already on the default image. There is no dev server and no `start` process.
+- After install, `pytest` and `scout` are on `/usr/local/bin`. From `/workspace`, run `pytest` and `python scripts/pure_check.py`.
+- `XAI_API_KEY` is optional. Tests marked `live` skip when it is unset. Do not add a key for the default test run.
