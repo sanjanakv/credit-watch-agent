@@ -1,3 +1,4 @@
 {
-  "install": "pip install -e '.[dev]'"
+  "name": "credit-signal-scout",
+  "install": "pip install -e '.[dev]'\nsudo ln -sfn \"$HOME/.local/bin/pytest\" /usr/local/bin/pytest\nsudo ln -sfn \"$HOME/.local/bin/py.test\" /usr/local/bin/py.test\nsudo ln -sfn \"$HOME/.local/bin/scout\" /usr/local/bin/scout"
 }
