@@ -1,0 +1,12 @@
+---
+description: Python conventions for the scout package
+globs: scout/**/*.py, tests/**/*.py, scripts/**/*.py
+alwaysApply: false
+---
+
+- Python 3.10+, type hints on all public functions, pydantic v2 models for data crossing a boundary.
+- Pydantic models use `ConfigDict(extra="forbid")`.
+- Functions take their dependencies (for example the LLM client) as arguments so tests can inject fakes.
+  No network calls at import time.
+- Raise specific exceptions (`GuardrailError`, `ValueError`), never bare `Exception`.
+- Keep modules under 150 lines. No new dependencies beyond pyproject.toml without a note in the PR.

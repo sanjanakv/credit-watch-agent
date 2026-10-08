@@ -1,0 +1,29 @@
+# FICTIONAL client. Any resemblance to a real company is coincidental.
+client_id: meridian-harbour
+legal_name: Meridian Harbour Logistics Pte Ltd (fictional)
+fictional: true
+sector: Marine logistics and container shipping services
+hq: Singapore
+exposures:
+  - id: E1
+    description: Asia-Europe routing via the Red Sea and Suez Canal versus the Cape of Good Hope
+    search_hints: [Red Sea shipping, Suez Canal transits, Cape rerouting, freight rates]
+  - id: E2
+    description: Bunker fuel cost (VLSFO) priced in Singapore
+    search_hints: [Singapore VLSFO price, bunker demand]
+  - id: E3
+    description: EU ETS and FuelEU Maritime compliance cost on Europe-bound voyages
+    search_hints: [EU ETS shipping, FuelEU Maritime]
+  - id: E4
+    description: Port congestion at Singapore and Port Klang
+    search_hints: [Singapore port congestion, Port Klang waiting times]
+  - id: E5
+    description: MYR/USD receivables
+    search_hints: [ringgit dollar, Bank Negara Malaysia]
+covenants:
+  - id: C1
+    text: Net debt / EBITDA at or below 3.5x
+  - id: C2
+    text: Interest cover at or above 3.0x
+  - id: C3
+    text: Minimum cash balance USD 15m

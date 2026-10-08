@@ -1,0 +1,29 @@
+# FICTIONAL client. Any resemblance to a real company is coincidental.
+client_id: aurelia-dc
+legal_name: Aurelia Data Centres Pte Ltd (fictional)
+fictional: true
+sector: Data centre developer and operator
+hq: Singapore
+exposures:
+  - id: E1
+    description: Singapore data centre capacity allocation and green data centre requirements
+    search_hints: [Singapore data centre capacity, IMDA green data centre]
+  - id: E2
+    description: Johor-Singapore data centre corridor competition
+    search_hints: [Johor data centre, Malaysia data centre power]
+  - id: E3
+    description: Power prices and grid capacity
+    search_hints: [Singapore power price, grid capacity data centres]
+  - id: E4
+    description: Advanced chip export controls affecting AI tenant demand
+    search_hints: [AI chip export controls Asia, GPU supply Singapore]
+  - id: E5
+    description: Construction cost inflation for data centre builds
+    search_hints: [data centre construction cost, switchgear lead times]
+covenants:
+  - id: C1
+    text: Loan to value at or below 55%
+  - id: C2
+    text: Debt service coverage ratio at or above 1.4x
+  - id: C3
+    text: Pre-let share of capacity at or above 60%

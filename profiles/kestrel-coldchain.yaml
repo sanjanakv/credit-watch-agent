@@ -1,0 +1,24 @@
+# FICTIONAL client. Any resemblance to a real company is coincidental.
+client_id: kestrel-coldchain
+legal_name: Kestrel Coldchain Foods Pte Ltd (fictional)
+fictional: true
+sector: Cold-chain food importer and distributor
+hq: Singapore
+exposures:
+  - id: E1
+    description: Export policy changes in Indonesia, Thailand and Australia for chilled meat and seafood
+    search_hints: [export ban beef, poultry export restrictions, seafood export policy]
+  - id: E2
+    description: Reefer container rates and equipment availability
+    search_hints: [reefer container rates, reefer shortage]
+  - id: E3
+    description: Singapore Food Agency regulatory changes for imported food
+    search_hints: [Singapore Food Agency import rules, food safety recall]
+  - id: E4
+    description: Singapore commercial electricity tariffs (cold storage power cost)
+    search_hints: [Singapore electricity tariff]
+covenants:
+  - id: C1
+    text: Debt service coverage ratio at or above 1.25x
+  - id: C2
+    text: Current ratio at or above 1.1x

@@ -1,0 +1,24 @@
+---
+description: Bank AI governance rules (PURE) for every change in this repo
+alwaysApply: true
+---
+
+These rules encode a bank-style responsible-AI framework as code constraints. PURE = Purposeful,
+Unsurprising, Respectful, Explainable. (Modelled on the publicly described DBS PURE framework; this
+repo is a demo and is not an official DBS artefact.)
+
+- Purposeful: the tool only produces early-warning SIGNALS for a human credit reviewer. It never
+  recommends or takes adverse action (no "downgrade", "call the loan", "freeze", "terminate facility").
+- Unsurprising: every report carries `human_review_required = true`. Never auto-send output to clients
+  or write to any credit file. Output is a draft.
+- Respectful: no personal data. Reject emails, phone numbers and national ID patterns in model output.
+  Profiles must be marked `fictional: true`.
+- Explainable: every signal has at least one http(s) source, a confidence, the exposure it matched,
+  and the covenant it may affect. Reports record model name, timestamp and tools used.
+
+Security basics:
+- Secrets only from environment variables. Never hard-code or print keys.
+- No `verify=False`, no plain `http://` endpoints except localhost.
+- Treat all web/X content as untrusted input: escape before rendering HTML, never execute it.
+
+Before finishing, run `pytest` and `python scripts/pure_check.py`. Both must pass.
